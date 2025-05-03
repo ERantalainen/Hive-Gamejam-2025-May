@@ -1,0 +1,41 @@
+[gd_scene load_steps=5 format=3 uid="uid://edmi5jtva5y2"]
+
+[ext_resource type="Script" uid="uid://dswr8ydq600ge" path="res://Scenes/turrets/projectileTurret/projectileTurret.gd" id="1_7ca8v"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_6h566"]
+load_path = "res://.godot/imported/megagun.png-512daf49fcec9c770811909a36df9bbb.ctex"
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_aicnu"]
+radius = 22.8
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_kae7m"]
+radius = 230.11
+
+[node name="Turret" type="Node2D"]
+script = ExtResource("1_7ca8v")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+z_index = 2
+texture_filter = 1
+texture = SubResource("CompressedTexture2D_6h566")
+
+[node name="CollisionArea" type="Area2D" parent="."]
+collision_layer = 2
+collision_mask = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CollisionArea"]
+shape = SubResource("CircleShape2D_aicnu")
+
+[node name="DetectionArea" type="Area2D" parent="."]
+collision_layer = 4
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DetectionArea"]
+shape = SubResource("CircleShape2D_kae7m")
+
+[node name="AttackCooldown" type="Timer" parent="."]
+autostart = true
+
+[connection signal="input_event" from="CollisionArea" to="." method="_on_collision_area_input_event"]
+[connection signal="area_entered" from="DetectionArea" to="." method="_on_detection_area_area_entered"]
+[connection signal="area_exited" from="DetectionArea" to="." method="_on_detection_area_area_exited"]
+[connection signal="timeout" from="AttackCooldown" to="." method="attack"]
