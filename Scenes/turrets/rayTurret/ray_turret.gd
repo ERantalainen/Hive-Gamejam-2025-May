@@ -52,7 +52,7 @@ func attack():
 			if collider.is_in_group("enemy"):
 				collider.get_damage(damage)
 				damage = damage + 2.5
-				collider.get_speed(0.5)
+				collider.get_speed(0.7)
 	damage = original_damage
 	if  is_instance_valid(current_target):
 		var best_target = find_highest_hp_target()

@@ -151,7 +151,6 @@ texture = ExtResource("2_co0py")
 [node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
 texture_filter = 1
 rotation = 1.60047
-scale = Vector2(3, 3)
 sprite_frames = SubResource("SpriteFrames_ds6ah")
 autoplay = "default"
 frame = 1

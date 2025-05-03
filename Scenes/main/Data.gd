@@ -115,7 +115,7 @@ const enemies := {
 	"Wasp": {
 		"stats": {
 			"hp": 2.0,
-			"speed": 2,
+			"speed": 0.8,
 			"baseDamage": 5.0,
 			"goldYield": 1.0,
 			},
@@ -125,45 +125,45 @@ const enemies := {
 	"Hornet": {
 		"stats": {
 			"hp":15.0,
-			"speed": 1,
+			"speed":0.5,
 			"baseDamage": 5.0,
 			"goldYield": 1.0,
 			},
-		"difficulty": 2.0,
+		"difficulty": 2.5,
 		"sprite": "res://Assets/enemies/Hornet.png",
 	},
 	"Scarab": {
 		"stats": {
 			"hp": 5.0,
-			"speed": 5.0,
+			"speed": 1.5,
 			"baseDamage": 1.0,
 			"goldYield": 5.0,
 			},
-		"difficulty": 2.0,
+		"difficulty": 3.0,
 		"sprite": "res://Assets/enemies/Scarab.png",
 	},
 	"Spider": {
 		"stats": {
 			"hp": 100.0,
-			"speed": 0.5,
+			"speed": 0.2,
 			"baseDamage": 10.0,
 			"goldYield": 7.0,
 			},
-		"difficulty": 4.0,
+		"difficulty": 5.0,
 		"sprite": "res://Assets/enemies/Centipede.png",
 	}
 }
 
 const maps := {
 	"map1": {
-		"name": "Grass Map",
-		"bg": "res://Assets/maps/map1.webp",
+		"name": "Hive",
+		"bg": "res://Assets/maps/map1.png",
 		"scene": "res://Scenes/maps/map1.tscn",
-		"baseHp": 10,
-		"startingGold": 100,
+		"baseHp": 20,
+		"startingGold": 150,
 		"spawner_settings":
 			{
-			"difficulty": {"initial": 2.0, "increase": 1.5, "multiplies": true},
+			"difficulty": {"initial": 1.0, "increase": 1.5, "multiplies": false},
 			"max_waves": 10,
 			"wave_spawn_count": 10,
 			"special_waves": {},
@@ -174,12 +174,12 @@ const maps := {
 		"bg": "res://Assets/maps/map2.png",
 		"scene": "res://Scenes/maps/map2.tscn",
 		"baseHp": 15,
-		"startingGold": 150,
+		"startingGold": 100,
 		"spawner_settings":
 			{
-			"difficulty": {"initial": 1.0, "increase": 1.8, "multiplies": true},
+			"difficulty": {"initial": 1.0, "increase": 1.5, "multiplies": true},
 			"max_waves": 15,
-			"wave_spawn_count": 12,
+			"wave_spawn_count": 15,
 			"special_waves": {},
 			},
 	}
