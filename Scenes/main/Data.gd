@@ -147,10 +147,20 @@ const enemies := {
 			"hp": 100.0,
 			"speed": 0.2,
 			"baseDamage": 10.0,
-			"goldYield": 7.0,
+			"goldYield": 15,
 			},
 		"difficulty": 5.0,
 		"sprite": "res://Assets/enemies/Centipede.png",
+	},
+	"Drone": {
+		"stats": {
+			"hp": 500.0,
+			"speed": 0.05,
+			"baseDamage": 25.0,
+			"goldYield": 50,
+			},
+		"difficulty": 10.0,
+		"sprite": "res://Assets/enemies/Drone.png",
 	}
 }
 
@@ -163,7 +173,7 @@ const maps := {
 		"startingGold": 150,
 		"spawner_settings":
 			{
-			"difficulty": {"initial": 1.0, "increase": 1.5, "multiplies": false},
+			"difficulty": {"initial": 10.0, "increase": 1.5, "multiplies": false},
 			"max_waves": 10,
 			"wave_spawn_count": 10,
 			"special_waves": {},

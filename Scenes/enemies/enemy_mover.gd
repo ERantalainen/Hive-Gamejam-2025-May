@@ -22,7 +22,7 @@ func _ready():
 func _process(_delta):
 	if state == State.walking:
 		#Move
-		progress_ratio += 0.0001 * speed
+		progress_ratio += 0.0008 * speed
 		if progress_ratio == 1:
 			finished_path()
 			return
@@ -42,13 +42,14 @@ func finished_path():
 	spawner.enemy_destroyed()
 	Globals.currentMap.get_base_damage(baseDamage)
 	queue_free()
-
+@onready var death = $AudioStreamPlayer2D
 func get_damage(damage):
 	if is_destroyed:
 		return
 	hp -= damage
 	damage_animation()
 	if hp <= 0:
+		death.play()
 		is_destroyed = true
 		spawner.enemy_destroyed()
 		Globals.currentMap.gold += goldYield

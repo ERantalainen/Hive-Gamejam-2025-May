@@ -1,6 +1,9 @@
 res://Scenes/ui/mainMenu/mainMenu.tscn
 res://Scenes/turrets/meleeTurret/melee_turret.gd
 res://Scenes/turrets/rayTurret/laser.gdshader
+res://Scenes/turrets/rayTurret/ray_turret.gd
+res://Scenes/ui/mainMenu/main_menu.gd
+res://Scenes/ui/mainMenu/MenuMusic.gd
 res://Scenes/maps/map2.tscn
 res://Scenes/turrets/projectileTurret/bullet/bulletBase.tscn
 res://Scenes/turrets/projectileTurret/projectileTurret.tscn
@@ -8,8 +11,10 @@ res://Scenes/turrets/meleeTurret/meleeTurret.tscn
 res://Scenes/turrets/turretBase/turretBase.tscn
 res://Scenes/maps/map1.tscn
 res://Scenes/turrets/rayTurret/rayTurret.tscn
-res://Scenes/main/Data.gd
 res://Scenes/ui/mainMenu/map_container.tscn
 res://Scenes/ui/mainMenu/select_map_container.tscn
 res://Scenes/enemies/enemy_mover.gd
-res://Scenes/turrets/rayTurret/ray_turret.gd
+res://Scenes/turrets/projectileTurret/projectileTurret.gd
+res://Scenes/enemies/enemy_mover.tscn
+res://Scenes/main/Data.gd
+res://Assets/bullets/bullet2.tres

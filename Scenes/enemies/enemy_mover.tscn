@@ -1,6 +1,7 @@
-[gd_scene load_steps=6 format=3 uid="uid://cb3v7e6vydle1"]
+[gd_scene load_steps=7 format=3 uid="uid://cb3v7e6vydle1"]
 
 [ext_resource type="Script" uid="uid://b66acwypuy1p7" path="res://Scenes/enemies/enemy_mover.gd" id="1_e187i"]
+[ext_resource type="AudioStream" uid="uid://d0460mh4i8bfc" path="res://Assets/enemies/DroneDeath.wav" id="2_gonov"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_n7nll"]
 load_path = "res://.godot/imported/Wasp.png-330da31315c8611d7c974973d404dc85.ctex"
@@ -51,3 +52,7 @@ autoplay = "move"
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Area"]
 shape = SubResource("CircleShape2D_7h0ns")
+
+[node name="AudioStreamPlayer2D" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_gonov")
+volume_db = -3.975

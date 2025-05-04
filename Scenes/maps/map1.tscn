@@ -1,7 +1,8 @@
-[gd_scene load_steps=5 format=3 uid="uid://ceo44f3u14hlm"]
+[gd_scene load_steps=6 format=3 uid="uid://ceo44f3u14hlm"]
 
 [ext_resource type="Script" uid="uid://64lj3f6co5ja" path="res://Scenes/maps/baseMap.gd" id="1_k8s62"]
 [ext_resource type="Script" uid="uid://cxt1172uadcpa" path="res://Scenes/maps/EnemySpawner.gd" id="2_351sa"]
+[ext_resource type="AudioStream" path="/home/erantala/Downloads/OGG Dystopian by Tim Beek/OGG Dystopian by Tim Beek/The Protagonist.ogg" id="3_sb70v"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_tmt4b"]
 load_path = "res://.godot/imported/map1.png-af81778363e8d0f2b95efad5f3216a46.ctex"
@@ -43,6 +44,9 @@ collision_mask = 2
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="Obstacles"]
 visible = false
 polygon = PackedVector2Array(-300, -303, -305, -212, -353, -123, -409, -133, -435, -76, -407, 108, -91, 119, -78, -123, -35, -151, 177, -146, 219, 7, 230, 148, 420, 146, 418, -7, 296, -21, 278, -299, 360, -296, 364, -107, 468, -48, 503, 35, 512, 211, 457, 236, 170, 237, 136, 187, 137, -34, -5, -37, -3, 149, -24, 181, -113, 201, -489, 183, -517, -78, -603, -190, -603, -300)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_sb70v")
 
 [connection signal="timeout" from="PathSpawner/SpawnDelay" to="PathSpawner" method="_on_spawn_delay_timeout"]
 [connection signal="timeout" from="PathSpawner/WaveDelayTimer" to="PathSpawner" method="_on_wave_delay_timer_timeout"]

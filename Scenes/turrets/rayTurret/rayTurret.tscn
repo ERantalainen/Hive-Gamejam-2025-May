@@ -1,9 +1,10 @@
-[gd_scene load_steps=16 format=3 uid="uid://bpnr2j3gxucn"]
+[gd_scene load_steps=17 format=3 uid="uid://bpnr2j3gxucn"]
 
 [ext_resource type="Script" uid="uid://d3vsycy46wi18" path="res://Scenes/turrets/rayTurret/ray_turret.gd" id="1_bpos3"]
 [ext_resource type="Texture2D" uid="uid://bkbkiod8hgy5l" path="res://Assets/turrets/technoturret.png" id="2_45tcr"]
 [ext_resource type="Shader" uid="uid://k43cu8soni7y" path="res://Scenes/turrets/rayTurret/laser.gdshader" id="3_qc2r3"]
 [ext_resource type="Texture2D" uid="uid://brgl1s10p2ham" path="res://Assets/bullets/Pixel.png" id="4_fjepc"]
+[ext_resource type="AudioStream" uid="uid://dsljifawmfg4v" path="res://Assets/turrets/Ray.wav" id="5_1nume"]
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_aicnu"]
 radius = 22.8
@@ -103,6 +104,10 @@ one_shot = true
 [node name="AttackTimer" type="Timer" parent="."]
 wait_time = 0.5
 autostart = true
+
+[node name="LaserBeam" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("5_1nume")
+volume_db = -3.312
 
 [connection signal="input_event" from="CollisionArea" to="." method="_on_collision_area_input_event"]
 [connection signal="area_entered" from="DetectionArea" to="." method="_on_detection_area_area_entered"]

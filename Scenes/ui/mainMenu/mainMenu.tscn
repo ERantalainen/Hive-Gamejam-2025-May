@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://duvsvsvu8biwm"]
+[gd_scene load_steps=4 format=3 uid="uid://duvsvsvu8biwm"]
 
 [ext_resource type="Script" uid="uid://c8guxrowjx8l5" path="res://Scenes/ui/mainMenu/main_menu.gd" id="1_lnqmy"]
+[ext_resource type="AudioStream" uid="uid://dncdj3irr13vw" path="res://Assets/music/Dystopian.ogg" id="2_potvr"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_cq5f6"]
 load_path = "res://.godot/imported/txt.png-fdf0ae360ddcfee9b732c5c3675ece31.ctex"
@@ -50,6 +51,11 @@ text = "Start Game"
 layout_mode = 2
 size_flags_vertical = 3
 text = "Quit"
+
+[node name="MenuMusic" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_potvr")
+autoplay = true
+playback_type = 1
 
 [connection signal="pressed" from="MenuButtons/VBoxContainer/startButton" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="MenuButtons/VBoxContainer/quitButton" to="." method="_on_quit_button_pressed"]

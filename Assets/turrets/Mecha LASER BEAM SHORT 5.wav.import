@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://bo74lsggxoenj"
+path="res://.godot/imported/Mecha LASER BEAM SHORT 5.wav-19811335effcae6348aa7e2f613ad101.sample"
+
+[deps]
+
+source_file="res://Assets/turrets/Mecha LASER BEAM SHORT 5.wav"
+dest_files=["res://.godot/imported/Mecha LASER BEAM SHORT 5.wav-19811335effcae6348aa7e2f613ad101.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2

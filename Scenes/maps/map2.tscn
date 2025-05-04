@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://bsasxqvr8q0gk"]
+[gd_scene load_steps=6 format=3 uid="uid://bsasxqvr8q0gk"]
 
 [ext_resource type="Script" uid="uid://64lj3f6co5ja" path="res://Scenes/maps/baseMap.gd" id="1_gpdsc"]
 [ext_resource type="Texture2D" uid="uid://cav13h33nebw7" path="res://Assets/maps/map2.png" id="2_4tkgh"]
 [ext_resource type="Script" uid="uid://cxt1172uadcpa" path="res://Scenes/maps/EnemySpawner.gd" id="3_1nn7n"]
+[ext_resource type="AudioStream" uid="uid://caahybbrwa425" path="res://Assets/music/The Nightclub.ogg" id="4_tlyxn"]
 
 [sub_resource type="Curve2D" id="Curve2D_bs0b4"]
 _data = {
@@ -22,7 +23,7 @@ curve = SubResource("Curve2D_bs0b4")
 script = ExtResource("3_1nn7n")
 
 [node name="SpawnDelay" type="Timer" parent="PathSpawner"]
-wait_time = 0.346
+wait_time = 3.0
 one_shot = true
 
 [node name="WaveDelayTimer" type="Timer" parent="PathSpawner"]
@@ -46,6 +47,10 @@ polygon = PackedVector2Array(-44, -26, 29, -41, 14, -73, 35, -103, 78, -109, 120
 
 [node name="CollisionPolygon2D3" type="CollisionPolygon2D" parent="Obstacles"]
 polygon = PackedVector2Array(-280, -173, -153, -164, -108, -193, -111, -247, -132, -266, -180, -269, -187, -283, -258, -284, -258, -265, -290, -263, -289, -247, -300, -232, -296, -195)
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("4_tlyxn")
+autoplay = true
 
 [connection signal="timeout" from="PathSpawner/SpawnDelay" to="PathSpawner" method="_on_spawn_delay_timeout"]
 [connection signal="timeout" from="PathSpawner/WaveDelayTimer" to="PathSpawner" method="_on_wave_delay_timer_timeout"]

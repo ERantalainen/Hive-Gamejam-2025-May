@@ -44,6 +44,9 @@ func try_get_closest_target():
 				if dist < closest_dist:
 					closest_dist = dist
 					current_target = enemy
+					
+@onready var fire_sound = $LaserBeam
+
 func attack():
 	var original_damage = damage
 	if not $RayDuration.is_stopped():
@@ -51,9 +54,8 @@ func attack():
 			var collider = a.get_parent()
 			if collider.is_in_group("enemy"):
 				collider.get_damage(damage)
-				damage = damage + 2.5
+				damage = damage + 0.05
 				collider.get_speed(0.7)
-	damage = original_damage
 	if  is_instance_valid(current_target):
 		var best_target = find_highest_hp_target()
 		if is_instance_valid(best_target) and best_target != current_target:
@@ -63,6 +65,7 @@ func attack():
 			can_fire = false
 			ray_enabled = true
 			$RayDuration.start()
+			fire_sound.play()
 	else:
 		try_get_closest_target()
 

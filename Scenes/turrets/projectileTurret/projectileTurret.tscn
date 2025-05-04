@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://edmi5jtva5y2"]
+[gd_scene load_steps=6 format=3 uid="uid://edmi5jtva5y2"]
 
 [ext_resource type="Script" uid="uid://dswr8ydq600ge" path="res://Scenes/turrets/projectileTurret/projectileTurret.gd" id="1_7ca8v"]
+[ext_resource type="AudioStream" uid="uid://dw30v1bvmcxq7" path="res://Assets/turrets/BasicShot.wav" id="2_147l2"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_6h566"]
 load_path = "res://.godot/imported/megagun.png-512daf49fcec9c770811909a36df9bbb.ctex"
@@ -34,6 +35,10 @@ shape = SubResource("CircleShape2D_kae7m")
 
 [node name="AttackCooldown" type="Timer" parent="."]
 autostart = true
+
+[node name="BulletSound" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource("2_147l2")
+volume_db = -3.975
 
 [connection signal="input_event" from="CollisionArea" to="." method="_on_collision_area_input_event"]
 [connection signal="area_entered" from="DetectionArea" to="." method="_on_detection_area_area_entered"]
