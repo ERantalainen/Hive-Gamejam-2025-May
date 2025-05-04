@@ -18,3 +18,4 @@ res://Scenes/turrets/projectileTurret/projectileTurret.gd
 res://Scenes/enemies/enemy_mover.tscn
 res://Scenes/main/Data.gd
 res://Assets/bullets/bullet2.tres
+res://README.md

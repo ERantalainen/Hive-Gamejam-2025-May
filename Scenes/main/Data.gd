@@ -124,22 +124,22 @@ const enemies := {
 	},
 	"Hornet": {
 		"stats": {
-			"hp":15.0,
+			"hp":25.0,
 			"speed":0.5,
 			"baseDamage": 5.0,
-			"goldYield": 1.0,
+			"goldYield": 3.0,
 			},
 		"difficulty": 2.5,
 		"sprite": "res://Assets/enemies/Hornet.png",
 	},
 	"Scarab": {
 		"stats": {
-			"hp": 5.0,
+			"hp": 15.0,
 			"speed": 1.5,
 			"baseDamage": 1.0,
-			"goldYield": 5.0,
+			"goldYield": 8.0,
 			},
-		"difficulty": 3.0,
+		"difficulty": 3.5,
 		"sprite": "res://Assets/enemies/Scarab.png",
 	},
 	"Spider": {
@@ -173,7 +173,7 @@ const maps := {
 		"startingGold": 150,
 		"spawner_settings":
 			{
-			"difficulty": {"initial": 10.0, "increase": 1.5, "multiplies": false},
+			"difficulty": {"initial": 1.0, "increase": 1.5, "multiplies": false},
 			"max_waves": 10,
 			"wave_spawn_count": 10,
 			"special_waves": {},
@@ -187,7 +187,7 @@ const maps := {
 		"startingGold": 100,
 		"spawner_settings":
 			{
-			"difficulty": {"initial": 1.0, "increase": 1.5, "multiplies": true},
+			"difficulty": {"initial": 1.2, "increase": 1.5, "multiplies": true},
 			"max_waves": 15,
 			"wave_spawn_count": 15,
 			"special_waves": {},
