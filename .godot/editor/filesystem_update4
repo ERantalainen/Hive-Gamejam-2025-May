@@ -19,3 +19,4 @@ res://Scenes/enemies/enemy_mover.tscn
 res://Scenes/main/Data.gd
 res://Assets/bullets/bullet2.tres
 res://README.md
+res://export_presets.cfg
