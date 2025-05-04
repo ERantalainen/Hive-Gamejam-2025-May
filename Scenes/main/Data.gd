@@ -174,8 +174,8 @@ const maps := {
 		"spawner_settings":
 			{
 			"difficulty": {"initial": 1.0, "increase": 1.5, "multiplies": false},
-			"max_waves": 10,
-			"wave_spawn_count": 10,
+			"max_waves": 1,
+			"wave_spawn_count": 6,
 			"special_waves": {},
 			},
 	},
@@ -188,8 +188,8 @@ const maps := {
 		"spawner_settings":
 			{
 			"difficulty": {"initial": 1.2, "increase": 1.5, "multiplies": true},
-			"max_waves": 15,
-			"wave_spawn_count": 15,
+			"max_waves": 10,
+			"wave_spawn_count": 10,
 			"special_waves": {},
 			},
 	}

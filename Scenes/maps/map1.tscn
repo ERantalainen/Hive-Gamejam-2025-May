@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://64lj3f6co5ja" path="res://Scenes/maps/baseMap.gd" id="1_k8s62"]
 [ext_resource type="Script" uid="uid://cxt1172uadcpa" path="res://Scenes/maps/EnemySpawner.gd" id="2_351sa"]
-[ext_resource type="AudioStream" path="/home/erantala/Downloads/OGG Dystopian by Tim Beek/OGG Dystopian by Tim Beek/The Protagonist.ogg" id="3_sb70v"]
+[ext_resource type="AudioStream" uid="uid://dsprf6n6uy0xv" path="res://Assets/music/Empty Streets.ogg" id="3_sb70v"]
 
 [sub_resource type="CompressedTexture2D" id="CompressedTexture2D_tmt4b"]
 load_path = "res://.godot/imported/map1.png-af81778363e8d0f2b95efad5f3216a46.ctex"
@@ -47,6 +47,7 @@ polygon = PackedVector2Array(-300, -303, -305, -212, -353, -123, -409, -133, -43
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("3_sb70v")
+autoplay = true
 
 [connection signal="timeout" from="PathSpawner/SpawnDelay" to="PathSpawner" method="_on_spawn_delay_timeout"]
 [connection signal="timeout" from="PathSpawner/WaveDelayTimer" to="PathSpawner" method="_on_wave_delay_timer_timeout"]

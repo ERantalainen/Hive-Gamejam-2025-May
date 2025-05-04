@@ -25,8 +25,7 @@ theme_override_constants/separation = 10
 
 [node name="GameOverText" type="Label" parent="CenterPanel/VBoxContainer"]
 layout_mode = 2
-text = "Map Completed!
-"
+text = ">>>>>>>>>>SUCCESS<<<<<<<<<<"
 horizontal_alignment = 1
 
 [node name="HSeparator" type="HSeparator" parent="CenterPanel/VBoxContainer"]

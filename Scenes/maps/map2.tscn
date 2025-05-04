@@ -23,7 +23,6 @@ curve = SubResource("Curve2D_bs0b4")
 script = ExtResource("3_1nn7n")
 
 [node name="SpawnDelay" type="Timer" parent="PathSpawner"]
-wait_time = 3.0
 one_shot = true
 
 [node name="WaveDelayTimer" type="Timer" parent="PathSpawner"]
