@@ -13,7 +13,7 @@ const turrets := {
 			"damage": {"amount": 2.5, "multiplies": false},
 			"attack_speed": {"amount": 1.5, "multiplies": true},
 		},
-		"name": "Gatling Gun",
+		"name": "Guards",
 		"cost": 50,
 		"upgrade_cost": 50,
 		"max_level": 2,
@@ -26,18 +26,18 @@ const turrets := {
 	"laser": {
 		"stats": {
 			"damage": 1,
-			"attack_speed": 20.0,
-			"attack_range": 250.0,
-			"bulletSpeed": 400.0,
-			"bulletPierce": 4,
+			"attack_speed": 15.0,
+			"attack_range": 150.0,
+			"bulletSpeed": 200.0,
+			"bulletPierce": 3,
 		},
 		"upgrades": {
-			"damage": {"amount": 2.5, "multiplies": false},
+			"damage": {"amount": 1.5, "multiplies": false},
 			"attack_speed": {"amount": 1.5, "multiplies": true},
 		},
-		"name": "Flamethrower",
-		"cost": 70,
-		"upgrade_cost": 50,
+		"name": "Bocal",
+		"cost": 100,
+		"upgrade_cost": 85,
 		"max_level": 3,
 		"scene": "res://Scenes/turrets/projectileTurret/projectileTurret.tscn",
 		"sprite": "res://Assets/turrets/AntiTank.png",
@@ -49,7 +49,7 @@ const turrets := {
 		"stats": {
 			"damage": 0.5,
 			"attack_speed": 0.5,
-			"attack_range": 300.0,
+			"attack_range": 200.0,
 			"ray_duration": 1.0,
 			"ray_length": 300.0,
 		},
@@ -59,9 +59,9 @@ const turrets := {
 			"ray_length": {"amount": 1.5, "multiplies": true},
 			"ray_duration": {"amount": 1.5, "multiplies": true},
 		},
-		"name": "Raygun",
+		"name": "Foragoaters",
 		"cost": 50,
-		"upgrade_cost": 50,
+		"upgrade_cost": 70,
 		"max_level": 3,
 		"scene": "res://Scenes/turrets/rayTurret/rayTurret.tscn",
 		"sprite": "res://Assets/turrets/Forager.png",
@@ -70,19 +70,18 @@ const turrets := {
 	},
 	"melee": {
 		"stats": {
-			"damage": 2.0,
+			"damage": 1.5,
 			"attack_speed": 1.5,
-			"attack_range": 100.0,
-			"slow_down": 0.6,
+			"attack_range": 140.0,
+			"slow_down": 0.65,
 		},
 		"upgrades": {
-			"damage": {"amount": 2.5, "multiplies": false},
-			"attack_speed": {"amount": 1.5, "multiplies": true},
-			"slow_down": {"amount:": -0.1, "multiplies": false},
+			"damage": {"amount": 1.0, "multiplies": false},
+			"attack_speed": {"amount": 1.8, "multiplies": true},
 		},
-		"name": "Explosive",
+		"name": "Builders demo squad",
 		"cost": 75,
-		"upgrade_cost": 55,
+		"upgrade_cost": 65,
 		"max_level": 3,
 		"scene": "res://Scenes/turrets/meleeTurret/meleeTurret.tscn",
 		"sprite": "res://Assets/turrets/Builder.png",
@@ -115,16 +114,16 @@ const enemies := {
 	"Wasp": {
 		"stats": {
 			"hp": 2.0,
-			"speed": 0.8,
+			"speed": 0.6,
 			"baseDamage": 5.0,
-			"goldYield": 1.0,
+			"goldYield": 1.5,
 			},
 		"difficulty": 1.0,
 		"sprite": "res://Assets/enemies/Wasp.png",
 	},
 	"Hornet": {
 		"stats": {
-			"hp":25.0,
+			"hp":20.0,
 			"speed":0.5,
 			"baseDamage": 5.0,
 			"goldYield": 3.0,
@@ -134,8 +133,8 @@ const enemies := {
 	},
 	"Scarab": {
 		"stats": {
-			"hp": 15.0,
-			"speed": 1.5,
+			"hp": 8.0,
+			"speed": 1.0,
 			"baseDamage": 1.0,
 			"goldYield": 8.0,
 			},
@@ -144,10 +143,10 @@ const enemies := {
 	},
 	"Spider": {
 		"stats": {
-			"hp": 100.0,
-			"speed": 0.2,
+			"hp": 50.0,
+			"speed": 0.8,
 			"baseDamage": 10.0,
-			"goldYield": 15,
+			"goldYield": 10,
 			},
 		"difficulty": 5.0,
 		"sprite": "res://Assets/enemies/Centipede.png",
@@ -155,7 +154,7 @@ const enemies := {
 	"Drone": {
 		"stats": {
 			"hp": 500.0,
-			"speed": 0.05,
+			"speed": 0.7,
 			"baseDamage": 25.0,
 			"goldYield": 50,
 			},
@@ -173,8 +172,8 @@ const maps := {
 		"startingGold": 150,
 		"spawner_settings":
 			{
-			"difficulty": {"initial": 1.0, "increase": 1.5, "multiplies": false},
-			"max_waves": 1,
+			"difficulty": {"initial": 1.0, "increase": 1.3, "multiplies": false},
+			"max_waves": 6,
 			"wave_spawn_count": 6,
 			"special_waves": {},
 			},
@@ -184,10 +183,10 @@ const maps := {
 		"bg": "res://Assets/maps/map2.png",
 		"scene": "res://Scenes/maps/map2.tscn",
 		"baseHp": 15,
-		"startingGold": 100,
+		"startingGold": 120,
 		"spawner_settings":
 			{
-			"difficulty": {"initial": 1.2, "increase": 1.5, "multiplies": true},
+			"difficulty": {"initial": 1.3, "increase": 1.5, "multiplies": true},
 			"max_waves": 10,
 			"wave_spawn_count": 10,
 			"special_waves": {},

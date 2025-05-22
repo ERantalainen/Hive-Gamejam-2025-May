@@ -22,7 +22,7 @@ func _ready():
 func _process(_delta):
 	if state == State.walking:
 		#Move
-		progress_ratio += 0.005 * speed
+		progress_ratio += 0.0019 * speed
 		if progress_ratio == 1:
 			finished_path()
 			return

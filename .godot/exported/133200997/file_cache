@@ -2,7 +2,7 @@ res://Assets/bullets/bullet1.tres::95a48e30eeb1103070fd04b181d01dd0::1746276481:
 res://Assets/bullets/bullet2.tres::6cf08a6f2c83a6e33b50f456b0b105c5::1746358563::res://.godot/exported/133200997/export-cefb7bcc85e672f299e592e151983377-bullet2.res
 res://Scenes/enemies/enemy_mover.tscn::6833654734901a24163191a172f24c90::1746361197::res://.godot/exported/133200997/export-6531c0a62cc1a45acfc69e69c62d155c-enemy_mover.scn
 res://Scenes/main/main.tscn::e61b2666c049df18f013132b206ebb62::1746271121::res://.godot/exported/133200997/export-ebc7fb6f265642a517cc551d8111eefa-main.scn
-res://Scenes/maps/map1.tscn::10312fbb0f19664e2fc553953f6467f7::1746361268::res://.godot/exported/133200997/export-7d92dfc3bae10858d247ea62f51caccd-map1.scn
+res://Scenes/maps/map1.tscn::10312fbb0f19664e2fc553953f6467f7::1746362165::res://.godot/exported/133200997/export-7d92dfc3bae10858d247ea62f51caccd-map1.scn
 res://Scenes/maps/map2.tscn::c7df81e836325930cf8951f683538b60::1746361197::res://.godot/exported/133200997/export-63b4ed7e9d77902e6dd056fe117bd584-map2.scn
 res://Scenes/turrets/meleeTurret/meleeTurret.tscn::a2f2046bf51f1ab5c02044ff452e7119::1746361197::res://.godot/exported/133200997/export-c779978931d744940c18feb4e0d93e07-meleeTurret.scn
 res://Scenes/turrets/projectileTurret/bullet/bulletBase.tscn::f02fc9bd1484bce2b1d4e15e8ff2e914::1746361197::res://.godot/exported/133200997/export-60694c497f04ae5485ff38312128f7bc-bulletBase.scn
