@@ -10,3 +10,8 @@ Sound effects by HeltonYan
 https://creativecommons.org/licenses/by/4.0/
 
 Music by Tim Beek
+
+<img width="1149" height="647" alt="kuva" src="https://github.com/user-attachments/assets/50ce356b-8522-46e9-a16f-94fb808b5759" />
+
+
+<img width="1147" height="602" alt="kuva" src="https://github.com/user-attachments/assets/7160f1d8-1e0d-45f9-a06b-e4623472296d" />
